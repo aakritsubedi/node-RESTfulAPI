@@ -21,10 +21,12 @@
 
 ### Step1: Installing express and running server
 
-- in app.js file  
+##### in app.js file  
+- require the express module
 `const express = require('express');`  
 `const app = express();`  
 
+- create a sample API 
 `
 app.get('/api',(req, res)=>{
  res.json({
@@ -33,10 +35,13 @@ app.get('/api',(req, res)=>{
  })
 });
 `
-
+- add PORT 
 `
 app.listen(3000, ()=>{
     console.log("Server is running at PORT 3000");
 });
 `
+
+- test in browser
+`localhost:3000/api`
 
