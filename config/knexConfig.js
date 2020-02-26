@@ -8,8 +8,6 @@ const connection = {
   database: process.env.MYSQL_DATABASE
 };
 
-console.log(connection);
-
 module.exports = {
   client: "mysql",
   connection,
