@@ -5,14 +5,18 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "yarn knex migrate:latest --knexfile config/knexConfig.js",
+    "make:migration": "yarn knex migrate:make --knexfile config/knexConfig.js"
   },
   "author": "AAkrit Subedi",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^4.0.0",
+    "bookshelf": "^1.1.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "knex": "^0.20.10",
     "mysql": "^2.18.1"
   },
   "devDependencies": {

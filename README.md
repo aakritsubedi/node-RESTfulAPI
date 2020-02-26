@@ -45,4 +45,6 @@ app.listen(3000, ()=>{
 - test in browser
 `localhost:3000/api`
 
-
+- Knex 
+- Bookshelf 
+- Migration using knex [...](https://gist.github.com/NigelEarle/70db130cc040cc2868555b29a0278261)
