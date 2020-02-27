@@ -21,6 +21,6 @@ module.exports = {
     return new Employee({ id }).save({ name: employee.name, email: employee.email, password: employee.password, age: employee.age, status: 1})
   },
   deleteUser: (id) => {
-    return new Employee({ id }).fetch().then( user => user.destroy());
+    return new Employee({ id }).fetch().then( emp => emp.destroy());
   }
 }
